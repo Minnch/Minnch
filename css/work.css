@@ -1,0 +1,326 @@
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 100vw;
+    }
+    body {
+        font-size:  14px;
+        line-height: 1.28;
+    }
+    .left {
+        display: none;
+    }
+    div.right .content .itemPageBox {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .right .content .itemPageBox  .content {
+        padding-left:  6px;
+        padding-right: 6px;
+    }
+    .right .content .itemPageBox .tabBox .item {
+        margin-right: 27px; 
+        padding:2px 7px ;
+        display: flex;
+        align-items: center;
+    }
+    .right .content .itemPageBox .tabBox {
+        margin-bottom: 18px;
+    }
+    .right div.topTitleBox {
+        padding: 0 24px;
+    }
+    .right div.topTitleBox .worksBox {
+        padding: 0 11px;
+    }
+    .right .content .itemPageBox div.tabBox div.item  {
+        font-size: 14px;
+    }
+    .right .content .itemPageBox {
+        padding-bottom: 20vh;
+    }
+}
+
+ul,li {
+    list-style-type:none !important;
+    padding: 0;
+}
+body {
+    font-size: 14px;
+}
+
+p {
+ margin:3px 0 2px 0;
+ }
+
+@media screen and (min-width: 751px) {
+    body {
+        font-size: 16px;
+        line-height:1.40;
+    }
+    .lgPageText {
+        font-size: 14px;
+        color: #888888;
+    }
+    .topTitleBox {
+        display: none;
+    }
+    .bottomTabBox {
+        display: none;
+    }
+    div.right {
+        padding-top: 6vh;
+        padding-bottom: 15vh;
+    }
+    .right>div.content {
+        margin-top: 0px !important;
+    }
+    .rowPage {
+        display: flex;
+        justify-content: space-between;
+    }
+    .rowPage div.right {
+        flex: 1;
+        flex-grow: 1;
+        padding-left: 5.5vw;
+        padding-right: 8.9vw;
+    }
+    .rowPage .left {
+        width: 12.4vw;
+    }
+    .right .content .itemPageBox .tabBox .item {
+        /* margin-right: 110px; */
+        margin-right: 50px;
+    }
+    .right .content .itemPageBox div.tabBox {
+        margin-bottom: 2.2vh;
+        width: 100%;
+    }
+    .right .content .itemPageBox .content div.first {
+        width: 48.9vw;
+        margin-right:3.8vw ;
+    }
+    .right .content .itemPageBox .content div.second {
+        width: 8.5vw;
+        margin-right:3.8vw ;
+    }
+    .right .content .itemPageBox .content div.three {
+        width: 8.5vw;
+    }
+    .right .content .itemPageBox .content .imgContentBox {
+        margin-top: 5vh;
+    }
+}
+
+
+
+.container {
+    width: 100vw;
+}
+.left {
+    height: 100vh;
+    background: #000000;
+    font-size: 18px;
+    position: relative;
+    min-width: 184px;
+}
+.left .leftIcon {
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 69px;
+}
+.left .leftIcon>span{
+    color: #D0D0D0;
+    cursor: pointer;
+    font-family: 'Roboto-Medium';
+
+}
+.left .leftIcon img {
+    width: 100%;
+}
+.left .letTab .boxText {
+    color: #333333;
+    font-size: 20px;
+    font-family: 'Oswald';
+    font-weight: bold;
+  
+}
+.left  .letTab {
+    width: 100%;
+    position: absolute;
+    bottom: 12.8vh;
+    color: #D0D0D0;
+    padding-left: 1.8vw;
+}
+.left  .letTab ul li {
+    width: 90%;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 5px;
+    font-family: 'Roboto-Medium';
+}
+.left .letTab ul li>span {
+    white-space: nowrap;
+}
+.left .letTab ul li.active>span {
+    padding: 0 5px;
+    background: #f8e71c;
+    color:#000000;
+    white-space: nowrap;
+    line-height: 1.25;
+    white-space: nowrap;
+}
+.right{
+    height: 100vh;
+    padding-top: 30px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.right .topTitleBox {
+    padding: 0 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 100;
+    font-family: 'Roboto-Medium';
+}
+.right .topTitle {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right .topTitle .img {
+    width: 35px;
+}
+.right .topTitle>span {
+    font-weight: bold;
+    cursor: pointer;
+}
+.right .worksBox {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Oswald';
+    color: #9B9B9B;
+}
+.right>div.content {
+    height: 65vh;
+    width: 100%;
+    margin-top: 11vh;
+}
+
+.right .content .itemPageBox {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.right .content .itemPageBox.active{
+    display: block;
+}
+.right .content .itemPageBox .tabBox {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    color: #6F6F6F;
+    justify-content: space-between;
+
+}
+/* // 隐藏 */
+ #contentPageBox>div:nth-child(n+ 2) {
+    display: none;
+}
+
+
+.right .content .itemPageBox .content>div:nth-child(n+ 2) {
+    display: none;
+}
+.right .content .itemPageBox .tabBox .item {
+    white-space: nowrap;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-family: 'Roboto-Medium' ;
+    font-size: 20px;
+
+}
+.right #UIUX .content>div:nth-child(n+ 2) {
+    display: none;
+}
+
+.right .content .itemPageBox .tabBox .item.active {
+    padding:0 2px;
+    background: #f8e71c;
+    color: #333333;
+}
+
+.right .content .itemPageBox .content .imgContentBox{
+    /*padding: 3.6vh 2vw;*/
+    background: #f3f3f3;
+    margin-bottom: 35px;
+    margin-top: 2vh;
+}
+
+/*.right .content .itemPageBox .content .2columnBox{
+    display:flex;
+    justify-content:space-between;
+    padding: 3.8vh 7.9vw;
+    background: #eeeeee;
+    margin-bottom: 35px;
+    margin-top: 2vh;
+}*/
+
+
+.right .content .itemPageBox .content  .imgContent {
+    /* margin-top: 21px; */
+    width: 100%;
+}
+.right .content .itemPageBox .content div.row>div>p.textBox {
+    font-family: 'Roboto-regular';
+    font-size: 16px;
+}
+.right .content h4 {
+    font-size: 20px;
+    font-family: 'Roboto-Medium';
+    margin-bottom: 0;
+}
+.right .content h5 {
+    font-size: 16px;
+    font-family: 'Roboto-Medium';
+    margin-bottom: 0;
+}
+
+/* ----------------------------------- */
+ .bottomTabBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 17.5vh;
+    width: 100%;
+    background: #0E0C0C;
+    padding: 20px 20px 0 20px;
+    font-size: 16px;
+    color: #979797 ;
+    font-weight: 'Roboto-Medium';
+    line-height:2;
+}
+ .bottomTabBox>ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+ .bottomTabBox>ul>li {
+    height: 20px;
+    line-height: 1.2;
+}
+.bottomTabBox>ul>li >span{
+    padding: 0 5px;
+    cursor: pointer;
+}
+ .bottomTabBox>ul>li.active >span {
+    background: #f8e71c;
+    color: #000 ;
+}

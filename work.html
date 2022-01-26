@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @font-face {
+            font-family: 'Oswald';
+            src: url('./static/front/Oswald-VariableFont_wght.ttf');
+        }
+        @font-face {
+            font-family: 'Oswald-Bold';
+            src: url('./static/front/Oswald-Bold.ttf');
+        }
+        @font-face {
+            font-family: 'Oswald-ExtraLight';
+            src: url('./static/front/Oswald-ExtraLight.ttf');
+        }
+        @font-face {
+            font-family: 'Oswald-Light';
+            src: url('./static/front/Oswald-Light.ttf');
+        }
+        @font-face {
+            font-family: 'Oswald-Regular';
+            src: url('./static/front/Oswald-Regular.ttf');
+        }
+        @font-face {
+            font-family: 'Oswald-SemiBold';
+            src: url('./static/front/Oswald-SemiBold.ttf');
+        }
+
+        @font-face {
+            font-family: 'Oswald-Medium';
+            src: url('./static/front/Oswald-Medium.ttf');
+        }
+
+        @font-face {
+            font-family: 'Roboto-Black';
+            src: url('./static/front/Roboto-Black.ttf');
+        }
+
+        @font-face {
+            font-family: 'Roboto-BlackItalic';
+            src: url('./static/front/Roboto-BlackItalic.ttf');
+        }
+
+        @font-face {
+            font-family: 'Roboto-Bold';
+            src: url('./static/front/Roboto-Bold.ttf');
+        }
+        @font-face {
+            font-family: 'Roboto-BoldItalic';
+            src: url('./static/front/Roboto-BoldItalic.ttf');
+        }
+        @font-face {
+            font-family: 'Roboto-Italic';
+            src: url('./static/front/Roboto-Italic.ttf');
+        }
+        @font-face {
+            font-family: 'Roboto-Light';
+            src: url('./static/front/Roboto-Light.ttf');
+        }
+        @font-face {
+            font-family: 'Roboto-LightItalic';
+            src: url('./static/front/Roboto-LightItalic.ttf');
+        }
+        @font-face {
+            font-family: 'Roboto-Medium';
+            src: url('./static/front/Roboto-Medium.ttf');
+        }
+        @font-face {
+            font-family: 'Roboto-MediumItalic';
+            src: url('./static/front/Roboto-MediumItalic.ttf');
+        }
+        @font-face {
+            font-family: 'Roboto-Regular';
+            src: url('./static/front/Roboto-Regular.ttf');
+        }
+        @font-face {
+            font-family: 'Roboto-Thin';
+            src: url('./static/front/Roboto-Thin.ttf');
+        }
+        @font-face {
+            font-family: 'Roboto-ThinItalic';
+            src: url('./static/front/Roboto-ThinItalic.ttf');
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Minning Chen | Project & UI/UX & Visual Designer</title>
+    <link rel="stylesheet" href="./css/work.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row rowPage">
+            <div class='left '>
+                <div class="leftIcon" id='backBtn'>
+                    <img src="./static/page/logo2.png" oncontextmenu="return false" alt="">
+                    <span class='lgPageText'> Back Home</span>
+                </div>
+                <div class="letTab">
+                    <div class='boxText'> WORKS</div>
+                    <ul>
+                        <li class='active' id='UIUX_Ltab'><span>UI & UX</span></li>
+                        <li id='Visual_Ltab'> <span>Visual & Branding </span> </li>
+                        <li id='Packaging_Ltab'> <span>Packaging & Labelling</span> </li>
+                        <li id='Motion_Ltab'> <span>Motion & Animation</span> </li>
+                        <li id='Project_Ltab'> <span>Project Management</span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class='right'>
+                <div class="topTitleBox">
+                    <div class="topTitle">
+                        <img src="./static/index/logo1.png" oncontextmenu="return false" alt="" class="img">
+                        <span id='backBtn_right'> Back Home</span>
+                    </div>
+                    <div class='worksBox'>
+                        WORKS
+                    </div>
+                </div>
+
+                <div class='content' id='contentPageBox'>
+                    <div class="itemPageBox" id='UIUX'>
+                        <div class='tabBox'>
+                            <div class='item lgPageText active'>App: Fantuan Delivery</div>
+                            <div class='item lgPageText'>Web: Baidu Antivirus</div>
+                            <div class='item lgPageText'>App: Boumi Monitor </div>
+                            <div class='item lgPageText'>Web: Jiayou Logistics </div>
+                        </div>
+                        <div class='content'>
+                            <div id='UIUX0'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>Fantuan Delivery App - English Version</h5>
+                                        <p class="lgPageText textBox">As the product designer, I worked with the product managers and the development team. I participated in the development of the English version of the app. By studying competing products as well as the Chinese version of the app, I provided the feasible product design within the demanding deadline. As part of the UI/UX team, I mostly worked on optimizing the users' experience, improving the processes, and ensuring better coordination between the Chinese and English user preferences into a minimum viable product.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">Fantuan Technology Ltd.</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            Product Design<br>
+                                            UI & UX Design <br>
+                                            App Visual <br>
+                                            Product Testing<br>
+                                        </p>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/FantuanApp/FantuanApp1.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/FantuanApp/FantuanApp2.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12'>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/FantuanApp/FantuanApp3.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                        <div class='col-xs-12 '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/FantuanApp/FantuanApp4.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/FantuanApp/FantuanApp5.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='UIUX1'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>Baidu Antivirus Website</h5>
+                                        <p class="lgPageText textBox">This project is to promote and download Baidu
+                                            Antivirus in overseas markets. The entire website is composed of product
+                                            introductions, downloads, and web games. In this project, I was responsible
+                                            for game character design, website design, user interaction, game flow
+                                            design, and visual effects, etc.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">Baidu Antivirus</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            UI & UX Design <br>
+                                            Character Design <br>
+                                            Web Visual <br>
+                                        </p>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/Baidu/Baidu1.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/Baidu/Baidu2.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12 col-sm-6 '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/Baidu/Baidu3.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                        <div class='col-xs-12 col-sm-6 '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/Baidu/Baidu4.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/Baidu/Baidu.gif" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='UIUX2'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>Boumi Monitor App</h5>
+                                        <p class="lgPageText textBox">Boumi monitor is a smart blood pressure monitor
+                                            and its app design is mainly based on the target customer group, that is,
+                                            middle-aged and elderly users. The main functions of the app are multi-user
+                                            login, blood pressure measurement recording, measurement data storage, daily
+                                            health analysis, articles/news feeds and reading, etc. I was responsible for
+                                            UE, user interaction, visual design, and more for this project.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">Boumi Monitior</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            UI & UX Design<br>
+                                            Prototype<br>
+                                            Testing<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/Boumi/Boumi.png" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='UIUX3'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>Jiayou Logistics Website</h5>
+                                        <p class="lgPageText textBox">Jiayou is a Chinese logistics company. Through
+                                            learning and understanding the work process and needs of the customer, I
+                                            cooperated with the development department to customize the official website
+                                            for the customer. I was responsible for UI and website design.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">JiaYou Logistics Ltd.</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            UI & UX Design<br>
+                                            Web Visual<br>
+                                            Testing<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/Jiayou/Jiayou1.png" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/Jiayou/Jiayou2.png" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='itemPageBox' id='Visual'>
+                        <div class='tabBox'>
+                            <div class='item lgPageText active'> Marketing Collateral: Fantuan </div>
+                            <div class='item lgPageText'>Rebranding: The Tribute to Classic </div>
+                            <div class='item lgPageText'>Visual: Child Gain Chews </div>
+                            <div class='item lgPageText'>LogoFolio</div>
+                        </div>
+                        <div class='content'>
+                            <div id='Visual0'>
+                                 <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>Fantuan Marketing Collateral</h5>
+                                        <p class="lgPageText textBox">I have been responsible for designing best-fit solutions for multi-faceted campaigns such as marketing promotional materials.  The major categories include but are not limited to brochures, posters, windows signage, business cards, social media content, all in-app visual materials, and key visual design for special campaigns.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">Fantuan Technology Ltd.</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            Visual Design<br>
+                                            Campaign Concept<br>
+                                            Ad Delivery <br>
+                                        </p>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/Marketing/Marketing.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                         <div class='col-xs-12 col-sm-6 '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/Marketing/SideAds.CN.gif" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                         <div class='col-xs-12 col-sm-6 '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/Marketing/SideAds.EN.gif" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='Visual1'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>The Tribute to Classic</h5>
+                                        <p class="lgPageText textBox">The client selected the fruits and vegetables commonly used in freeze-drying packaging to make 2 series / 4 single products. After in-depth communication and learning with product development and sales departments, I redefined the concept of the product, optimized the packaging forms and materials, reduced product costs, and reorganized market strategies. Paying tribute to the world's famous paintings with the classic selection of freeze-drying technology and creating a brand new and fashionable brand image through the comic style, I independently designed the images, visuals, packaging design, and related promotional materials of this series, and delivered them for printing and arranged the transportation.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">Vancouver Freeze Dry Ltd.</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            Rebranding Concept<br>
+                                            Character Design<br>
+                                            Visual Design<br>
+                                            Packaging Structure Design
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/TheTribute/tribute.png" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/TheTribute/Tribute.gif" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/TheTribute/tribute2.png" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='Visual2'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>Child Gain Chews</h5>
+                                        <p class="lgPageText textBox">This series of products are freeze-dried nutritional snacks for children aged 1-12 with original research and development. I have participated in product development from the product conception stage, market research, brand positioning, cost accounting, price management to marketing strategies, brand image, etc. Furthermore, I directed attractive cartoon characters’ creation processes, independently designed a wide range of visual systems and packaging with different specifications, supervised overseas printing and transportation, and oversaw and guided promotional video preparation and release.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">Vancouver Freeze Dry Ltd</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            Character Design<br>
+                                            Visual Design<br>
+                                            Packaging<br>
+                                            Food Labelling Regulation<br>
+                                        </p>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/ChildGainChews/childchews1.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/ChildGainChews/childchews2.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12 '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/ChildGainChews/childchews3.png" oncontextmenu="return false"
+                                                    class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='Visual3'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>LogoFolio</h5>
+                                        <p class="lgPageText textBox">Logo is never just a picture: it is the core element of identity with deep symbolic meaning influencing the whole image and recognizability of the brand. This Logo Folio is my collection of logos created these years. They are designed for various products and target audience, and all of them are the result of thoughtful consumer and market research, deep creative search, incorporating idea into the logo and sophisticated work over visual details. Some of them are local and others are international. Read on and enjoy!
+                                        </p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">Multiple</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            Logo Design <br>
+                                            VI Design<br>
+                                        </p>
+                                    </div>
+                                    <div class="row ">
+                                        <div class='col-xs-12  '>
+                                            <div class='imgContentBox'>
+                                                <img src="./static/page/Logofolio/Logofolio.png"
+                                                    oncontextmenu="return false" class='imgContent' alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='itemPageBox' id='Packaging'>
+                         <div class='tabBox'>
+                            <div class='item lgPageText active'>Packaging: StarFruits</div>
+                            <div class='item lgPageText'>Packaging: Space Snack</div>
+                            <div class='item lgPageText'>Labelling: NutriPur Whey Protein</div>
+                            <div class='item lgPageText'>Labelling: Nurture Nuts</div>
+                        </div>
+                        <div class='content'>
+                            <div id='Packaging0'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>StarFruits</h5>
+                                        <p class="lgPageText textBox">Starfruits is a food brand that produces fruits with freeze-dried technology. I joined the project after they have already created the packages in the form of a stand-up pouch bag, and helped them design the retail display box. After I studied the client's needs and requests, I created the box diagrams and box visual design, contacted the overseas printing vendor, and oversaw the printing process.
+                                            Half a year later, due to product updates, the client requested an optimization of the product packaging for budget reasons. Although freeze-dried products require stringent high-quality packaging with aluminum materials, I have nevertheless successfully updated the product packaging method to reduce cost, and afterward redesigned the related packaging with the product contents.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">SunFarm Products Ltd.</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            Packaging Design<br>
+                                            Box Structure<br>
+                                            Printing Materials Optimizing<br>
+                                            Food Label Regulation<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/StarFruits/StarFruits.png" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='Packaging1'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>Space Snack</h5>
+                                        <p class="lgPageText textBox">Space Snack is a product already on the market. According to the current sales situation, while maintaining the product image, I developed and designed other packaging display forms for this product by reusing the existing visual graphics of the product and adding new content. And based on the requirements of different vendors, I customized exclusive packaging for different vendors.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">Vancouver Freeze Dry Ltd</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            Packaging Design<br>
+                                            Box Structure<br>
+                                            Brand Identity<br>
+                                            Food Label Regulation<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/SpaceSnack/Spacesnack.png" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='Packaging2'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>NutriPur Whey Protein</h5>
+                                        <p class="lgPageText textBox">NutriPur Whey Protein whey protein is a product made for female consumers. I assisted the clients to figure out the product's selling points and translating them into visual expressions. I have also reviewed the labeling information with Canadian food regulations, prepared the print files for the manufacturer, and approved the labeling in hologram printing with a glossy finish.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">JustOrder Technology Ltd.</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            Packaging Design<br>
+                                            Labelling Printing<br>
+                                            Product Scripts Optimizing<br>
+                                            Food Label Regulation<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/WheyProtein/WheyProtein.png" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='Packaging3'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>Nurture Nuts Series</h5>
+                                        <p class="lgPageText textBox">Nurture Nuts Series are the product manufactured in Montreal, and the original product labelling is primary in French. The distributor came to me with lots of customer feedback about the labelling expression problems and requested the optimization of the whole labelling with the brand's own style in English.  I maintained the brand's original style and created a favourable design framework for the expansion of the products in the future. From the customer's perspective, I clarified product information in labelling to indicate product features to achieve its goal of inspiring consumers to purchase.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">JustOrder Technology Ltd.</p>
+                                        <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Role</h5>
+                                        <p class="lgPageText textBox">
+                                            Food Label Regulation<br>
+                                            Co-branding Concept<br>
+                                            Labelling Design<br>
+                                            Printing Reviews<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                            <img src="./static/page/NaturalPeanut/NaturalPeanut.png" oncontextmenu="return false"
+                                                class='imgContent' alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='itemPageBox' id='Motion'>
+                        <div class='tabBox'>
+                            <div class='item lgPageText active'>Animation Advertising: Child Gain Chews</div>
+                            <div class='item lgPageText'>Motion Graphic: Offisky Business Phone System</div>
+                        </div>
+                        <div class='content'>
+                            <div id='Motion0'>
+                                <div class='row'>
+                                   <div class='col-xs-12 '>
+                                      <h5>Child Gain Chews Promotion Film </h5>
+                                      <p class="lgPageText textBox">This series of products are freeze-dried nutritional
+                                        snacks for children aged 1-12 with original research and development. I have
+                                        participated in product development from the product conception stage, market
+                                        research, brand positioning, cost accounting, price management to marketing
+                                        strategies, brand images, etc. Furthermore, I directed attractive cartoon
+                                        characters’ creation processes, independently designed a wide range of visual
+                                        systems and packaging with different specifications, supervised overseas
+                                        printing and transportation, and oversaw and guided promotional video
+                                        preparation and release.</p>
+                                      <p class="lgPageText textBox"> Work details available upon request.</p>
+                                   </div>
+                                   <div class='col-xs-12 '>
+                                       <h5>Client</h5>
+                                       <p class="lgPageText textBox">Vancouver Freeze Dry Ltd</p>
+                                    <!--<h5>Y-2019</h5>-->
+                                   </div>
+                                   <div class='col-xs-12 '>
+                                       <h5>Role</h5>
+                                       <p class="lgPageText textBox">
+                                        Character Drawing<br>
+                                        Storyboard<br>
+                                        Release & Public
+                                        </p>
+                                   </div>
+                                </div>
+                                <div class="row ">
+                                   <div class='col-xs-12  '>
+                                      <div class='imgContentBox'>
+                                          <embed width=100% height='520px'
+                                            src="https://www.youtube.com/embed/cHGVBb0dSEM?rel=0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen="true" oncontextmenu="return false" class='imgContent'
+                                            alt="">
+                                      </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <div id='Motion1'>
+                                <div class='row'>
+                                    <div class='col-xs-12 '>
+                                        <h5>Offisky Business Phone System </h5>
+                                        <p class="lgPageText textBox">Offisky is a commercial telephone system platform that adapts to the entire platform, and allowing customers flexibly to set up their own commercial telephone systems without the need to purchase additional commercial telephones and special telephone lines. As the commercial telephone system is a more traditional field, I used the form of motion graphic to produce cross-platform video promotional materials, and briefly introduced several functions of the Offisky platform to attract the users.</p>
+                                        <p class="lgPageText textBox"> Work details available upon request.</p>
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                        <h5>Client</h5>
+                                        <p class="lgPageText textBox">Babysoft Corporation</p>
+                                    <!--<h5>Y-2019</h5>-->
+                                    </div>
+                                    <div class='col-xs-12 '>
+                                    <h5>Role</h5>
+                                    <p class="lgPageText textBox">
+                                        Character Drawing<br>
+                                        Storyboard<br>
+                                        Motion Graphic<br>
+                                        Visual Effects
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class='row' >
+                                    <div class='col-xs-12  '>
+                                        <div class='imgContentBox'>
+                                        <embed width=100% height='520px'
+                                            src="https://www.youtube.com/embed/l5ZiaLW6990?rel=0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen="true" oncontextmenu="return false" class='imgContent'
+                                            alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='itemPageBox' id='Project'>
+                        <div class='content'>
+                            <div class='row'>
+                                <div class='col-xs-12 '>
+                                    <h5>Exhibition: CIIE 2019 Shanghai</h5>
+                                    <p class="lgPageText textBox">On behalf of the company, planned and executed CIIE 2019 exhibition projects, from preparation, details determination, booth design, supervised of construction, event arrangement, created promotional materials, to exhibition services and customer development and communication. In this exhibition, more than 32 products were displayed in exhibits, and conducted product recommendations or service exchanges with more than 500 exhibitors, which enabled the exhibition to achieve the greatest publicity effect.</p>
+                                    <p class="lgPageText textBox"> Work details available upon request.</p>
+                                </div>
+                                <div class='col-xs-12 '>
+                                    <h5>Client</h5>
+                                    <p class="lgPageText textBox">Vancouver Freeze Dry Ltd.</p>
+                                </div>
+                                <div class='col-xs-12 '>
+                                    <h5>Role</h5>
+                                    <p class="lgPageText textBox">
+                                        Project Management<br>
+                                        Event Execution<br>
+                                        Exhibition Service<br>
+                                        Customer Development
+                                    </p>
+                                </div>
+                                <div class='col-xs-12  '>
+                                    <div class='imgContentBox'>
+                                        <img src="./static/page/CIIE2019/CIIE2019.png" oncontextmenu="return false"
+                                            class='imgContent' alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='bottomTabBox'>
+                <ul>
+                    <li class='active' id='UIUX_Btab'><span>UI & UX Design</span></li>
+                    <li id='Visual_Btab'> <span>Visual & Branding</span> </li>
+                    <li id='Packaging_Btab'> <span>Packaging & Labelling</span> </li>
+                    <li id='Motion_Btab'> <span>Motion & Animation</span> </li>
+                    <li id='Project_Btab'> <span>Project Management</span> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        function clickTabPage() {
+            let idStr = $(this).attr('id').split('_')[0]
+            console.log(idStr, 3333)
+            $('#contentPageBox>div').map((i, page) => {
+                $(page).hide()
+            })
+            $('#' + idStr).fadeIn()
+        }
+        $('.letTab ul li').click(function () {
+            $('.letTab ul li').map((i, item) => {
+                $(item).removeClass('active')
+            })
+            $(this).addClass('active')
+            clickTabPage.call(this)
+        })
+        $('.bottomTabBox ul li').click(function () {
+            $('.bottomTabBox ul li').map((i, item) => {
+                $(item).removeClass('active')
+            })
+            $(this).addClass('active')
+            clickTabPage.call(this)
+        })
+
+        //UIUX 页面内的点击事件
+        $('#UIUX .tabBox div.item').click(function () {
+            console.log()
+            let index = 0;
+            $('#UIUX .tabBox div.item').map((i, item) => {
+                $(item).removeClass('active')
+                if ($(item).text() === $(this).text()) {
+                    index = i
+                }
+            })
+            $(this).addClass('active')
+            $('#UIUX div.content>div').map((i, UIUXContent) => {
+                $(UIUXContent).hide()
+            })
+            let str = '#UIUX' + (index)
+            $(str).fadeIn()
+        })
+
+
+        // visual 点击事件
+        $('#Visual .tabBox div.item').click(function () {
+            console.log()
+            let index = 0;
+            $('#Visual .tabBox div.item').map((i, item) => {
+                $(item).removeClass('active')
+                if ($(item).text() === $(this).text()) {
+                    index = i
+                }
+            })
+            $(this).addClass('active')
+            $('#Visual div.content>div').map((i, VisualContent) => {
+                $(VisualContent).hide()
+            })
+            let str = '#Visual' + (index)
+            $(str).fadeIn()
+        })
+
+
+        // Packaging 点击事件
+        $('#Packaging .tabBox div.item').click(function () {
+            console.log()
+            let index = 0;
+            $('#Packaging .tabBox div.item').map((i, item) => {
+                $(item).removeClass('active')
+                if ($(item).text() === $(this).text()) {
+                    index = i
+                }
+            })
+            $(this).addClass('active')
+            $('#Packaging div.content>div').map((i, PackagingContent) => {
+                $(PackagingContent).hide()
+            })
+            let str = '#Packaging' + (index)
+            $(str).fadeIn()
+        })
+
+
+         // Motion 点击事件
+        $('#Motion .tabBox div.item').click(function () {
+            console.log()
+            let index = 0;
+            $('#Motion .tabBox div.item').map((i, item) => {
+                $(item).removeClass('active')
+                if ($(item).text() === $(this).text()) {
+                    index = i
+                }
+            })
+            $(this).addClass('active')
+            $('#Motion div.content>div').map((i, MotionContent) => {
+                $(MotionContent).hide()
+            })
+            let str = '#Motion' + (index)
+            $(str).fadeIn()
+        })
+
+
+        // 返回
+        $('#backBtn').click(() => {
+            $("#backBtn").animate({
+                opacity: '0.5',
+            });
+            $("#backBtn").animate({
+                opacity: '1',
+            }, () => {
+                location.href = './index.html'
+            });
+        })
+        $('#backBtn_right').click(() => {
+            $("#backBtn").animate({
+                opacity: '0.5',
+            });
+            $("#backBtn").animate({
+                opacity: '1',
+            }, () => {
+                location.href = './index.html'
+            });
+        })
+    });
+</script>
+
+</html>

@@ -1,0 +1,354 @@
+body {
+    font-size:  16px;
+    line-height: 1.2;
+}
+
+p {
+    display: inline-block;
+    margin: 0 0 0px 0;
+}
+
+h5{
+   font-size: 16px;
+   font-family: 'Roboto-BoldItalic';
+   margin: 0 0 0 0;
+   display: inline-block;
+}
+
+h4{
+   font-size: 16px;
+   font-family: 'Roboto-Medium';
+   margin: 10px 0 0 0;
+   display: inline-block;
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 100vw;
+        padding: 0 3vw;
+    }
+    body {
+        font-size:  16px;
+    }
+    div.bottom {
+        width: 94vw;
+        right: 3vw;
+    }
+    .bottom .works .bg  {
+        right: 9%;
+    }
+    .bottom .works .bg .lt—sm-hidden {
+        display: none;
+    }
+    .bottom  div.works span.text {
+        font-size: 90px !important;
+        bottom: 10px;
+        line-height: 1;
+    }
+    .bottom div.works {
+        height: 12vh;
+    }
+    .bottom .works div.bg {
+        width: 90%;
+
+       /* right: 5%;*/
+    }
+
+   
+
+
+    .bottom .tab div.contentbox{
+        width: 100%;
+        padding: 0 0px;
+        text-align: right;
+    }
+
+    .bottom .tab .contentbox .myself  {
+        text-align: right;
+        font-family: 'Roboto-Regular';
+        /* position: absolute;
+        width: 90vw; */
+        font-size: 16px;
+    }
+
+    .bottom div.topInfo img {
+        width: 86px;
+        height: 95px;
+    }
+    .bottom div.topInfo span.text:first-child {
+        margin-right: -20px;
+    }
+    .bottom .tab .tabBox  {
+        position: relative;
+        z-index: 1000;
+    }
+    .title .time {
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width: 751px) {
+    body {
+        font-size:  28px;
+    }
+    .container {
+        padding-top: 3vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .title .time>div {
+        text-align: right;
+        color: #999999;
+    }
+    div.bottom{
+        width: 33vw;
+        bottom: 0;
+        right: 4vw;
+        min-width: 500px;
+        max-width: 500px
+    }
+
+    .bottom .tab .tabBox.gt-sm-show{
+        display: none;
+   
+    }
+    div.bottom div.works {
+        height: 100px;
+    }
+    .bottom .works div.bg  {
+        right: 38px;
+    }
+    .bottom .works .bg .lt—sm-hidden {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 30px;
+    }
+    .bottom .works .bg div.lt—sm-hidden>div{
+        padding-left: 8px;
+        cursor: pointer;
+        font-family: 'Roboto-Regular';
+    }
+    .bottom .works .bg .lt—sm-hidden>div.active{
+        color: #D0021B;
+    }
+    .bottom  div.works span.text {
+        font-size: 120px !important;
+        bottom: -6px;
+        right: -2px;
+    }
+    .bottom div.works {
+        height: 12vh;
+        line-height: 120px;
+        font-family: 'Oswald';
+    }
+    .title .info>div.emailbox {
+        font-size: 16px;
+        color: #4A4A4A;
+    }
+    .title .info>div.namebox {
+        font-size: 20px;
+    }
+    .title .time>div {
+        font-size: 20px;
+    }
+    .bottom div.topInfo {
+        margin-bottom: 12px;
+        font-family: 'Roboto-Italic';
+    }
+    .bottom div.topInfo .img {
+        /* margin-left: 16px;    */
+    }
+    .bottom .tab div.contentbox {
+        height: 177px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    div.bottom div.topInfo{
+        font-size: 30px
+    } 
+    .bottom div.topInfo span.text:first-child {
+        margin-right: -20px;
+    }
+}
+.container {
+    width: 100vw;
+}
+.title{
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+    margin-top: 35px;
+}
+.title .info {
+    flex: 2;
+    
+}
+.title .info>div {
+    width: 100%;
+    text-align: left;
+}
+.title .info>div.namebox {
+    font-weight: bold;
+    font-family:'Roboto-Medium';
+}
+.title .info>div.emailbox {
+    color: #4A4A4A;
+}
+
+.title .time {
+    flex: 1;
+}
+.title .time>div{
+    /* text-align: right; */
+    font-weight: bold;
+    font-family: 'Oswald-Medium';
+}
+
+.iconbox {
+    margin-top: 12px;
+    width: 100%;
+}
+.iconbox>div{
+    background: #000;
+    width: 8px;
+}
+.iconbox .top_ico {
+    height: 16px;
+    margin-bottom: 12px;
+}
+.iconbox .bottom_ico {
+    height: 58px;
+}
+.bottom{
+    position: fixed;
+    bottom: 6vh;
+    right: 0;
+    width: 70vw;
+    padding-bottom: 10px;
+}
+.bottom .topInfo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.bottom .topInfo .text {
+   font-family: 'Roboto-Italic';
+    white-space: nowrap;
+    line-height: 1;
+}
+.bottom .topInfo img{
+    width: 20vw;
+    max-width: 130px;
+    
+}
+.bottom  .works {
+    height: 6vh ;
+    text-align: right;
+    position: relative;
+   
+}
+@keyframes opacityChange {
+    0%   {opacity: 1;}
+    50%  {opacity: 0.56;}
+    100% {opacity: 1;}
+  }
+.bottom  .works .text {
+    position: absolute;
+    bottom: -20px;
+    font-size: 65px;
+    right: 0;
+    z-index: 100;
+    font-size: 75px;
+    font-family: 'Oswald-Medium';
+    font-weight: 500;
+    text-align: right;
+    letter-spacing: -1px;
+    cursor: pointer;
+    /* // 动画效果开启关闭 */
+    animation-name: opacityChange;
+    animation-duration: 3.5s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-direction:alternate;
+}
+
+.bottom .works .bg {
+   width: 100%;
+   height: 28px;
+   position: absolute;
+   right: 15px;
+   bottom: 15px;
+   background:#FFF100 ;
+}
+.bottom .tab .tabBox {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3px;
+    font-family: 'Roboto-Regular';
+}
+.bottom .tab .tabBox>div{
+    padding: 5px;
+    margin-left:5px;
+    cursor: pointer;
+}
+.bottom .tab .tabBox>div.active{
+    color: #D0021B;
+}
+
+.bottom .tab .contentbox {
+    margin-top: 5px;
+    height: 10vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    font-size: 20px;
+    font-family: 'Roboto-Regular';
+    line-height:1.28;
+
+}
+.bottom .tab .contentbox .myself {
+    display: none;
+    font-size: 16px;
+    margin-top: 6px;
+}
+.bottom .tab .contentbox .experience {
+    display: none;
+    padding-left: 0px;
+    margin-top: 6px;
+}
+.bottom .tab .contentbox .experience>div {
+    display: flex;
+    margin-bottom:2px;
+    justify-content: space-between;
+    font-size: 16px;
+    height: 16px;
+
+}
+
+.bottom .tab .contentbox .experience .titleBox p {
+    width: 100%;
+}
+.bottom .tab .contentbox .experience .past {
+    display: block;
+    line-height: 1.28;
+
+}
+.bottom .tab .contentbox .experience .past>div>p {
+    line-height: 1.28;
+    display: block;
+    color: #999999;
+    text-decoration:line-through;
+}
+
+
+.contentbox .otherBox {
+    display: none;
+}
+
+/*.bottom .tab .contentbox .experience>div>p:first-child {
+    color: #9B9B9B;
+    text-decoration:line-through;
+}*/
+
